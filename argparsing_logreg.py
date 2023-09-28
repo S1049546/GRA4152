@@ -16,5 +16,5 @@ def my_logistic_regression(penalty , fit_intercept , max_iter , tol):
     return clf
 
 
-
-my_logistic_regression(args.penalty, args.fit_intercept, args.max_iter, args.tol)
+test = my_logistic_regression(args.penalty, args.fit_intercept, args.max_iter, args.tol)
+print(test)
