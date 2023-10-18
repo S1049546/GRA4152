@@ -1,0 +1,118 @@
+Part of exercise Business P9.23:
+
+For the Country class:
+
+Step 1:
+informal list of responsibilities for the Country class:
+1. Genereate instances of countries.
+2. be able to store variables like name of country, population, area and density
+3. be able to return/give access to the same varibales
+
+Step 2:
+Specify public interface:
+
+class Country:
+
+    def __init__(self, name, population, area):
+    ...
+
+    def get_name(self):
+    ...
+
+    def get_population(self):
+    ...
+
+    def get_area(self):
+    ...
+
+    def get_density():
+    ...
+
+Step 3:
+Document the public interface:
+
+# # The class holds information about a country, the information is name of the country, population, area and density.
+# 
+class Country:
+
+ # # Constructs an object of a country, with name, population and area as parameters. 
+    #
+    def __init__(self, name, population, area):
+
+    # # returns the name of the country
+    # @return self._name instance variable that is the name of the country
+    #
+    def get_name(self):
+
+    # # returns the population of the country
+    # @return self._population instance variable that is the population of the country
+    #
+    def get_population(self):
+
+    # # returns the area of the country
+    # @return self._area instance variable that is the area of the country
+    #
+    def get_area(self):
+
+    # # returns the density of the country
+    # @return self._density instance variable that is the density of the country
+    #
+    def get_density(self):
+
+Step 4:
+Determine instance variables:
+I need instance variables for name, population, area and density. Beacuase the exercise says those are the ones I need.
+
+Step 5:
+See country.py for implementation
+
+Step 6:
+see country.py for implementation
+
+Step 7:
+See countryTest.py for test of class
+
+
+
+
+For the programme countryInformationFinder.py
+Step 1, Informal list of responsibilities:
+1. the programme should be able to find highest population, area and density from a list of countries
+2. the programme should be able to find highest population, area and density from a dictionary of countries
+
+Step 2, Specify public interface:
+def country_finder_for_list(list_of_countries):
+...
+
+def country_finder_for_dictionary(country_dict):
+...
+
+Step 3, Document the public interface:
+# # Finds the countries with largest population, largest area and largest density from a list of countries
+# @return a tuple of length 3 with the first element being the country with the largest population, second element being the country with largest area and third the country with largest density
+#
+def country_finder_for_list(list_of_countries):
+...
+
+# # Finds the countries with largest population, largest area and largest density from a dictionary of countries
+# @return a tuple of length 3 with the first element being the country with the largest population, second element being the country with largest area and third the country with largest density
+#
+def country_finder_for_dictionary(country_dict):
+...
+
+Step 4, Determine instance variables:
+No instance variables. this is not a class this is just a programme with functions.
+
+Step 5:
+Irrelevant for this.
+
+Step 6:
+See countryInformationFinder.py for implementation of methods
+
+Step 7:
+See testCountry for test programme.
+
+Extra:
+(I want to add that in the beginning, after reading the example, I thought we were supposed to make a menu of choices for the user.
+So that the user could choose if he/she wanted to find either highest population, area or density. So I made a class for that as well.
+That is also a part f the test programme.)
