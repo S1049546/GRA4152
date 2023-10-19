@@ -54,5 +54,4 @@ def message_test():
         print(Message._log)
         print("Expected: {'Bob': {'Simon': 'Hello Mister, how ya doin?\nAlso how the dating life going?'}")
 
-if __name__ == '__main__':
- message_test()
+message_test()

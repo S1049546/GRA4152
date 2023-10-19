@@ -60,5 +60,4 @@ def customer_test():
         print(c1.discountReached())
         print("Expected True")
 
-if __name__ == '__main__':
- customer_test()
+customer_test()

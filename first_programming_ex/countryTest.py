@@ -99,5 +99,5 @@ def country_test():
             pass
         print("programme finished!")
 
-if __name__ == '__main__':
- country_test()  
+
+country_test()  
