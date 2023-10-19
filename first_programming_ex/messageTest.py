@@ -33,7 +33,7 @@ def message_test():
                                     print(Message._no_messages)                     # prints the number of messages                
                                     print(Message._log)                             # prints a dictionary with all the senders as keys, alle the recievers as value, but also a key to the message sent. 
                                     '''))
-    parser.add_argument('--run_test', action='store_true', help='runs Customer test')
+    parser.add_argument('--run_test', action='store_true', help='runs Message test')
 
     args = parser.parse_args()
 

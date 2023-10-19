@@ -35,7 +35,7 @@ def country_test():
                                     list_stats = country_finder_for_dictionary(country_dict)    # Get the highest pop, area and density when using a dict
                                     print(list_stats)                                           # print the stats
                                     '''))
-    parser.add_argument('--run_test', action='store_true', help='runs Customer test')
+    parser.add_argument('--run_test', action='store_true', help='runs Country test')
     #parser.add_argument('-- list', type = str, action = 'store_True', help = "Here you choose if you want to use a list of countries or a dictionary of counries")
 
     args = parser.parse_args()
