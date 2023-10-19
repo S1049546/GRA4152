@@ -35,4 +35,3 @@ class Country:
     #
     def get_density(self):
         return self._density
-        #return float(self._population / self._area)

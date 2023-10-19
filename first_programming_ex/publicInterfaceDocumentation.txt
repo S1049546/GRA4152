@@ -1,5 +1,7 @@
 Part of exercise Business P9.23:
 
+THis is the same text as in the word document.
+
 For the Country class:
 
 Step 1:

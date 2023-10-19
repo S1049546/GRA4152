@@ -2,6 +2,7 @@
 # Task Business P9.24:
 
 # # A class that simulates a message between two people.
+#
 class Message:
     # # Class variables that represents the total number of messages sent, and the log of all messages sent.
     #
@@ -32,11 +33,8 @@ class Message:
             return f"From {self._sender}\nTo: {self._reciever}"
         else:
             return f"From {self._sender}\nTo: {self._reciever}\n{self._text}"
-
-    
-    #def __str__(self):
-    #    return f"From {self._sender}\nTo: {self._reciever} {self._text}"
      
+
     # # Method that updates the class variables _log and _no_messages
     #
     def log_messages(self):
