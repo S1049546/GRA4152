@@ -10,8 +10,8 @@ and then add its own "Wooooof," showing polymorphism where a single method call,
 behaviors depending on the type of object invoking it. 
 """
 
-
 # Part 1 of task 1:
+# Doscstring is in this file. So if you call print(Animal.__init__.__doc___) you would se the doc string for the constructor for instance.
 
 class Animal:
     """

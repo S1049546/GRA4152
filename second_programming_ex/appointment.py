@@ -1,8 +1,7 @@
 # Assignment 2:
 # Task 2:
-
-# # Super class Apoointment, a class that can make appointments.
-#
+# Task Business P10.22 - Business P10.24
+# Docstring is in this file.
 class Appointment:
     """
     # # Super class Appointment, a class that can make appointment objects and hold them in a list.
