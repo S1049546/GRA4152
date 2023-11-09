@@ -82,7 +82,7 @@ def appointment_book_programme():
                                     Appointment.printAppointments()
 
                                     # Big test:
-                                    See implementation. It is huge.
+                                    # See implementation. It is huge, so would not look god to put it here.
 
                                     
                                     '''))
@@ -118,12 +118,12 @@ def appointment_book_programme():
         Appointment.saveAll()
 
         Appointment.findAppointments(25,10,2024)
-        print("Expected:\nOne time appointment: Go biking, Date: 25.10.2024\nDaily appointment: Attend school, Starting: 10.5.2000\nDaily appointment: Play playstation, Starting: 8.11.2023\nDaily appointment: Football training, Starting: 20.5.2023\nMonthly appointment: Walk with a friend, Starting: 25.9.2020")
+        print("Expected:\nOne time, Go biking, 25.10.2024\nDaily, Attend school, 10.5.2000\nDaily, Play playstation, 8.11.2023\nDaily, Football training, 20.5.2023\nMonthly, Walk with a friend, 25.9.2020")
     
     elif args.run_load_test:
         # Load test:
         Appointment.load()
-        print("Here are all the objects created after loading the file:")
+        print("Here are all the objects created after loading/reading in the file:")
         Appointment.printAppointments()
 
     elif args.run_big_test:
@@ -145,6 +145,8 @@ def appointment_book_programme():
         monthly2 = Monthly("Hairdresser appointment", 1,2,2021)
         monthly3 = Monthly("Doctor appointment", 13,9,2020)
         monthly4 = Monthly("Walk with a friend", 25,9,2020)
+
+        Appointment.saveAll()
         # Make a loop that runs untill the user tells the programme to end.
         value = False
         while not value:

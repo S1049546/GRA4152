@@ -88,7 +88,10 @@ class Appointment:
         #
         """
         try:
-            with open(filename, "x") as f:
+            with open(filename, "w") as f: # This one is just to reset the content of the file after each time the program runs.
+                # So that we dont end up having multiple of the same content in the csv file.
+                # I have done this so that the find test works. If not we would end up printing out the same appointment 2 times if we do the test 2 times. and 3 on the third...
+                # Usually a user can choose file name their selves, and then it is not really a problem. 
                 f.write("")
         except FileExistsError:
             pass
@@ -107,7 +110,7 @@ class Appointment:
                 print(a)
 
     @classmethod
-    def load(cls, filename = "appointments.csv"):
+    def load(cls, filename = "appointments_to_load.csv"):
         """
         # # Class method that reads in a file and creates Appointment objects that are added to the class list.
         #
@@ -264,4 +267,5 @@ class Onetime(Appointment):
         """
         In my approach I use inheritance in the save method, that means that I create it in the superclass an let the subclasses 
         use the same implementation. If I were to use polymorphism I would still implement it in the Superclass, 
-        but then implement it differently in each subclass to fit each class specific need."""
+        but then implement it differently in each subclass to fit each class specific need.
+        """
