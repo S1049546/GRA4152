@@ -125,6 +125,9 @@ def appointment_book_programme():
         Appointment.load()
         print("Here are all the objects created after loading/reading in the file:")
         Appointment.printAppointments()
+        print()
+        print("Expected:")
+        print("Onetime, Wash my feet, 25.11.2023\nOnetime, Change tires, 10.1.2025\nOnetime, Eat soup, 10.1.2025\nOnetime, Play golf, 10.1.2020\nOnetime, Go skiing, 25.10.2023\nOnetime, Go fishing, 25.11.2023\nOnetime, Go biking, 25.10.2024\nDaily, Attend school, 10.5.2000\nDaily, Play playstation, 8.11.2023\nDaily, Football training, 20.5.2023\nMonthly, Dentist appointment, 7.8.2022\nMonthly, Hairdresser appointment, 1.2.2021\nMonthly, Doctor appointment, 13.9.2020\nMonthly, Walk with a friend, 25.9.2020")
 
     elif args.run_big_test:
         wash = Onetime("Wash my feet", 25, 11, 2023)
